@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProjetoEscola.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="470" Width="674" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/ProjetoEscola;component/Images/9.png" />
+    </Window.Background>
+    <Grid>
+        <Label Content="Usuário:" Height="28" HorizontalAlignment="Left" Margin="219,199,0,0" Name="label1" VerticalAlignment="Top" Foreground="#FFE2E7EF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="Senha:" Height="28" HorizontalAlignment="Left" Margin="219,226,0,0" Name="label2" VerticalAlignment="Top" Foreground="#FFE5E8EB" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBox Height="24" HorizontalAlignment="Left" Margin="273,201,0,0" Name="usuarioT" VerticalAlignment="Top" Width="111" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" />
+        <TextBox Height="22" HorizontalAlignment="Left" Margin="273,230,0,0" Name="senhaT" VerticalAlignment="Top" Width="111" VerticalContentAlignment="Center" />
+        <Button Content="Entrar" Height="23" HorizontalAlignment="Left" Margin="238,301,0,0" Name="EntrarT" VerticalAlignment="Top" Width="75" Background="{StaticResource {x:Static SystemColors.ControlLightLightBrushKey}}" Click="EntrarT_Click" />
+        <Button Content="Fechar" Height="23" HorizontalAlignment="Left" Margin="328,301,0,0" Name="fecharT" VerticalAlignment="Top" Width="75" Background="{StaticResource {x:Static SystemColors.ControlBrushKey}}" Click="fecharT_Click" />
+    </Grid>
+</Window>

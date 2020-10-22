@@ -1,0 +1,51 @@
+﻿<Window x:Class="ProjetoEscola.Curso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Curso" Height="485" Width="585">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/ProjetoEscola;component/Images/1.png" />
+        </Grid.Background>
+        <Border BorderBrush="#FF0B0B0B" BorderThickness="1" Height="40" HorizontalAlignment="Left" Name="border1" VerticalAlignment="Top" Width="563" Background="#FFCFEBF6">
+            <Label Content="Curso" Height="38" Name="label7" FontSize="20" HorizontalAlignment="Center" FontFamily="Papyrus" />
+        </Border>
+        <Rectangle Height="13" HorizontalAlignment="Left" Margin="0,104,0,0" Name="rectangle1" Stroke="{x:Null}" VerticalAlignment="Top" Width="563">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#00000000" Offset="0" />
+                    <GradientStop Color="Transparent" Offset="0.697" />
+                    <GradientStop Color="#FF7F7F7F" Offset="0.574" />
+                    <GradientStop Color="#003F3F3F" Offset="0.41" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <ComboBox Height="23" Margin="215,65,223,0" Name="listaCursoT" VerticalAlignment="Top" />
+        <Button Content="Consultar" Height="23" HorizontalAlignment="Left" Margin="349,65,0,0" Name="consultarCurso" VerticalAlignment="Top" Width="75" Click="consultarCurso_Click" />
+        <Label Content="Nome:" Height="28" HorizontalAlignment="Left" Margin="168,63,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Nome:" Height="28" HorizontalAlignment="Left" Margin="10,132,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="51,134,0,0" Name="nomeCursoT" VerticalAlignment="Top" Width="346" IsEnabled="False" />
+        <Label Content="Carga Horaria:" Height="28" HorizontalAlignment="Left" Margin="401,133,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="487,137,0,0" Name="cargaHorariaCursoT" VerticalAlignment="Top" Width="68" IsEnabled="False" />
+        <Label Content="Descrição:" Height="28" HorizontalAlignment="Left" Margin="10,166,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="Disciplinas:" Height="28" HorizontalAlignment="Left" Margin="312,166,0,0" Name="label6" VerticalAlignment="Top" />
+        <Border BorderBrush="#FF131313" BorderThickness="1" Height="35" HorizontalAlignment="Left" Margin="0,312,0,0" Name="border2" VerticalAlignment="Top" Width="563" Background="#FFCFEBF6">
+            <Label Content="Disciplina" Height="41" Name="label9" HorizontalAlignment="Center" FontSize="20" FontFamily="Papyrus" />
+        </Border>
+        <Label Content="Nome:" Height="28" HorizontalAlignment="Left" Margin="46,363,0,0" Name="label8" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="92,365,0,0" Name="nomeDisciplinaT" VerticalAlignment="Top" Width="267" IsEnabled="False" />
+        <Label Content="Carga Horaria:" Height="28" HorizontalAlignment="Left" Margin="367,362,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="456,364,0,0" Name="cargaHorariaDisciplinaT" VerticalAlignment="Top" Width="68" IsEnabled="False" />
+        <Button Height="23" HorizontalAlignment="Left" Margin="12,410,0,0" Name="novoDisciplina" VerticalAlignment="Top" Width="75" Content="Novo" Click="novoDisciplina_Click" />
+        <Button Content="Editar" Height="23" HorizontalAlignment="Left" Margin="92,410,0,0" Name="editarDisciplina" VerticalAlignment="Top" Width="75" Click="editarDisciplina_Click" />
+        <Button Content="Excluir" Height="23" HorizontalAlignment="Left" Margin="175,410,0,0" Name="excluirDisciplina" VerticalAlignment="Top" Width="75" Click="excluirDisciplina_Click" />
+        <Button Content="Salvar" Height="23" HorizontalAlignment="Left" Margin="256,410,0,0" Name="salvarDisciplina" VerticalAlignment="Top" Width="75" Click="salvarDisciplina_Click" />
+        <Button Content="Cancelar" Height="23" HorizontalAlignment="Left" Margin="456,410,0,0" Name="cancelar" VerticalAlignment="Top" Width="75" Click="cancelar_Click" />
+        <Button Content="Novo" Height="23" HorizontalAlignment="Left" Margin="12,283,0,0" Name="novoCurso" VerticalAlignment="Top" Width="75" Click="novoCurso_Click" />
+        <Button Content="Editar" Height="23" HorizontalAlignment="Left" Margin="92,283,0,0" Name="editarCurso" VerticalAlignment="Top" Width="75" Click="editarCurso_Click" />
+        <Button Content="Excluir" Height="23" HorizontalAlignment="Left" Margin="175,283,0,0" Name="excluirCurso" VerticalAlignment="Top" Width="75" Click="excluirCurso_Click" />
+        <Button Content="Salvar" Height="23" HorizontalAlignment="Left" Margin="256,283,0,0" Name="salvarCurso" VerticalAlignment="Top" Width="75" Click="salvarCurso_Click" />
+        <Button Content="Consultar Disciplinas" Height="23" HorizontalAlignment="Left" Margin="428,283,0,0" Name="consultarDisciplina" VerticalAlignment="Top" Width="123" Click="consultarDisciplina_Click" />
+        <ListBox Height="78" HorizontalAlignment="Left" Margin="302,189,0,0" Name="listaDisciplinaT" VerticalAlignment="Top" Width="238" IsEnabled="True" />
+        <TextBox Height="78" HorizontalAlignment="Left" Margin="12,189,0,0" Name="descricaoCursoT" VerticalAlignment="Top" Width="240" IsEnabled="False" />
+    </Grid>
+</Window>
